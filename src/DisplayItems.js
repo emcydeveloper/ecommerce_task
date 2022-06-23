@@ -19,7 +19,7 @@ export function DisplayItems() {
             src="https://resource.logitechg.com/w_1000,c_limit,q_auto,f_auto,dpr_auto/d_transparent.gif/content/dam/gaming/en/products/g733/gallery/g733-black-gallery-1.png?v=1"
             alt="comes here"
           ></img>
-          {items.cartStatus ? <button className="add-to-cart"> Added </button> : <button className="add-to-cart" onClick={() => handleAddToCart(items.id)}>Add to Cart</button>}
+          {items.cartStatus ? <p> Added to cart </p> : <button className="add-to-cart" onClick={() => handleAddToCart(items.id)}>Add to Cart</button>}
 
           <h4 className="product-price">₹ {items.productPrice}</h4>
         </div>
